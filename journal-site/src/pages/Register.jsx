@@ -32,7 +32,8 @@ export default function Register() {
     }
 
     try {
-      const response = await fetch('https://journal-website-677g.onrender.com', {
+      // *** THIS IS THE FIXED LINK ***
+      const response = await fetch('https://journal-website-677g.onrender.com/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
