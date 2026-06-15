@@ -10,8 +10,8 @@ app.use(express.json());
 const MONGO_URI = "mongodb+srv://naveenid30:9PiIQmGaToe2QqjV@zyrenpublish.dkabskh.mongodb.net/?appName=ZyrenPublish";
 
 mongoose.connect(MONGO_URI)
-  .then(() => console.log('🟢 Successfully connected to MongoDB!'))
-  .catch((err) => console.error('🔴 MongoDB connection error:', err));
+  .then(() => console.log(' Successfully connected to MongoDB!'))
+  .catch((err) => console.error('MongoDB connection error:', err));
 
 const userSchema = new mongoose.Schema({
   firstName: String,
